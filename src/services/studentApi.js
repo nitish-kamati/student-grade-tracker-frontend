@@ -1,4 +1,4 @@
-const API_BASE = "/students";
+const API_BASE = import.meta.env.VITE_API_URL + "/students";
 
 async function request(url, options = {}) {
   const response = await fetch(url, {
